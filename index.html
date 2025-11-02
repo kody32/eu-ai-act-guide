@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EU AI Act &amp; GDPR: Complete Compliance Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Initialize theme immediately to prevent flash
+    (function() {
+      const savedTheme = localStorage.getItem('color-scheme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-color-scheme', initialTheme);
+    })();
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="main-nav" class="main-nav">
+    <div class="nav-container">
+      <div class="nav-brand">EU AI Act Guide</div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#risk-framework">Risk Framework</a></li>
+        <li><a href="#healthcare-finance">Healthcare &amp; Finance</a></li>
+        <li><a href="#ai-categories">AI Categories</a></li>
+        <li><a href="#gdpr-connection">GDPR Connection</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#compliance-checker">Compliance Checker</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Quick Actions Button -->
+  <div class="quick-actions">
+    <button class="quick-actions-btn" id="quick-actions-btn" aria-label="Quick actions menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="1"></circle>
+        <circle cx="12" cy="5" r="1"></circle>
+        <circle cx="12" cy="19" r="1"></circle>
+      </svg>
+    </button>
+    <div class="quick-actions-menu" id="quick-actions-menu">
+      <a href="#compliance-checker">Start Compliance Check</a>
+      <button onclick="window.print()">Print Guide</button>
+      <button id="share-btn">Share</button>
+    </div>
+  </div>
+
+  <!-- Home Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <h1 class="hero-title">EU AI Act &amp; GDPR: Complete Compliance Guide for Startups &amp; SMEs</h1>
+      <p class="hero-subtitle">Navigate Europe's comprehensive AI regulation framework with confidence</p>
+      
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">2024</div>
+          <div class="stat-label">Adopted</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2025-2027</div>
+          <div class="stat-label">Phased Implementation</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">4</div>
+          <div class="stat-label">Risk Levels</div>
+        </div>
+      </div>
+
+      <div class="intro-text">
+        <p>The EU AI Act is the world's first comprehensive legal framework for artificial intelligence, establishing a risk-based approach to AI regulation. Understanding how it intersects with GDPR is crucial for compliance.</p>
+      </div>
+
+      <div class="risk-overview-grid">
+        <div class="risk-card risk-unacceptable">
+          <div class="risk-icon">🚫</div>
+          <h3>Unacceptable Risk</h3>
+          <div class="risk-badge">BANNED</div>
+          <p>Prohibited AI practices that violate fundamental rights</p>
+        </div>
+        <div class="risk-card risk-high">
+          <div class="risk-icon">⚠️</div>
+          <h3>High-Risk</h3>
+          <div class="risk-badge">STRICT REQUIREMENTS</div>
+          <p>Heavily regulated systems affecting critical decisions</p>
+        </div>
+        <div class="risk-card risk-limited">
+          <div class="risk-icon">ℹ️</div>
+          <h3>Limited-Risk</h3>
+          <div class="risk-badge">TRANSPARENCY REQUIRED</div>
+          <p>Basic disclosure and transparency obligations</p>
+        </div>
+        <div class="risk-card risk-minimal">
+          <div class="risk-icon">✓</div>
+          <h3>Minimal-Risk</h3>
+          <div class="risk-badge">MOSTLY UNREGULATED</div>
+          <p>No specific AI Act requirements</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Risk Framework Section -->
+  <section id="risk-framework" class="section">
+    <div class="container">
+      <h2 class="section-title">Risk Framework Deep Dive</h2>
+      <p class="section-subtitle">Explore each risk category in detail</p>
+      
+      <div class="risk-framework-accordion" id="risk-accordion">
+        <!-- Risk levels will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Healthcare & Finance Section -->
+  <section id="healthcare-finance" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Healthcare &amp; Finance: High-Risk but NOT Prohibited</h2>
+      <p class="section-subtitle">Understanding sector-specific regulations</p>
+      
+      <div class="important-callout">
+        <strong>Important:</strong> Healthcare and financial AI are NOT prohibited—they are classified as high-risk and require strict compliance.
+      </div>
+
+      <div class="sector-grid">
+        <div class="sector-card">
+          <h3>Healthcare AI</h3>
+          <div class="status-badge status-high-risk">High-Risk (NOT Prohibited)</div>
+          
+          <h4>Classification Criteria:</h4>
+          <ul>
+            <li>Medical devices (Class IIa or higher) under MDR/IVDR</li>
+            <li>AI-assisted diagnostics and treatment recommendations</li>
+            <li>Emergency triage and call evaluation</li>
+            <li>Health service eligibility determination</li>
+            <li>Emotion recognition for healthcare decisions</li>
+          </ul>
+
+          <h4>Key Requirements:</h4>
+          <ul>
+            <li>Risk management and mitigation</li>
+            <li>High-quality representative data</li>
+            <li>Bias detection and testing</li>
+            <li>Human oversight capabilities</li>
+            <li>Accuracy benchmarks</li>
+            <li>Transparency to deployers</li>
+            <li>Technical documentation</li>
+            <li>Conformity assessment</li>
+          </ul>
+
+          <div class="deadline-box">
+            <strong>Compliance Deadline:</strong> August 2, 2027 (medical devices)
+          </div>
+
+          <div class="note-box">
+            <strong>Exemptions:</strong> Narrow procedural tasks (e.g., ICD-10 coding) without replacing human judgment
+          </div>
+        </div>
+
+        <div class="sector-card">
+          <h3>Financial Services AI</h3>
+          <div class="status-badge status-high-risk">High-Risk (NOT Prohibited)</div>
+          
+          <h4>Classification Criteria:</h4>
+          <ul>
+            <li>Creditworthiness assessment systems</li>
+            <li>Loan approval and denial decisions</li>
+            <li>Insurance eligibility and pricing</li>
+            <li>Financial risk evaluation</li>
+            <li>Automated underwriting</li>
+          </ul>
+
+          <h4>Key Requirements:</h4>
+          <ul>
+            <li>Risk management throughout lifecycle</li>
+            <li>Data quality and bias prevention</li>
+            <li>Transparency and explainability to consumers</li>
+            <li>Human oversight and intervention capability</li>
+            <li>Robustness and accuracy testing</li>
+            <li>Complete audit trails</li>
+            <li>Cybersecurity protections</li>
+          </ul>
+
+          <div class="deadline-box">
+            <strong>Compliance Deadline:</strong> August 2, 2026
+          </div>
+
+          <div class="note-box">
+            <strong>Special Note:</strong> Must comply with both AI Act and GDPR automated decision-making rules (Article 22)
+          </div>
+        </div>
+      </div>
+
+      <div class="prohibited-practices-box">
+        <h3>Prohibited Practices Across All Sectors</h3>
+        <div class="prohibited-grid">
+          <div class="prohibited-item">❌ Social scoring systems</div>
+          <div class="prohibited-item">❌ Subliminal manipulation</div>
+          <div class="prohibited-item">❌ Mass facial recognition scraping</div>
+          <div class="prohibited-item">❌ Emotion recognition in workplace/education</div>
+          <div class="prohibited-item">❌ Biometric categorization of sensitive attributes</div>
+          <div class="prohibited-item">❌ Exploitation of vulnerabilities</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete AI Categories Section -->
+  <section id="ai-categories" class="section">
+    <div class="container">
+      <h2 class="section-title">Complete AI Categories List</h2>
+      <p class="section-subtitle">Find your AI system type and understand requirements</p>
+      
+      <div class="search-box">
+        <input type="text" id="category-search" placeholder="Search AI categories..." class="form-control">
+      </div>
+
+      <div class="categories-container" id="categories-container">
+        <!-- Categories will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Connection Section -->
+  <section id="gdpr-connection" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">GDPR &amp; AI Act: Understanding the Connection</h2>
+      <p class="section-subtitle">How these two regulations work together</p>
+
+      <div class="venn-diagram">
+        <div class="venn-container">
+          <div class="venn-circle venn-gdpr">
+            <div class="venn-label">GDPR</div>
+            <ul class="venn-items">
+              <li>Privacy protection</li>
+              <li>Personal data focus</li>
+              <li>Controllers/Processors</li>
+            </ul>
+          </div>
+          <div class="venn-circle venn-ai-act">
+            <div class="venn-label">AI Act</div>
+            <ul class="venn-items">
+              <li>Product safety</li>
+              <li>All AI systems</li>
+              <li>Providers/Deployers</li>
+            </ul>
+          </div>
+          <div class="venn-overlap">
+            <strong>Overlap</strong>
+            <ul>
+              <li>Data quality</li>
+              <li>Transparency</li>
+              <li>Accountability</li>
+              <li>Risk assessments</li>
+              <li>Human oversight</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-table-container">
+        <h3>Detailed Comparison</h3>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>GDPR</th>
+              <th>AI Act</th>
+              <th>Overlap</th>
+            </tr>
+          </thead>
+          <tbody id="comparison-tbody">
+            <!-- Populated by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="synergies-section">
+        <h3>Synergies for Startups &amp; SMEs</h3>
+        <div class="synergies-grid">
+          <div class="synergy-card">
+            <div class="synergy-icon">🔄</div>
+            <h4>Leverage Existing Compliance</h4>
+            <p>Your GDPR compliance provides a foundation for AI Act requirements</p>
+          </div>
+          <div class="synergy-card">
+            <div class="synergy-icon">📋</div>
+            <h4>Combine Assessments</h4>
+            <p>DPIAs can be extended to cover AI Act FRIA requirements</p>
+          </div>
+          <div class="synergy-card">
+            <div class="synergy-icon">📊</div>
+            <h4>Unified Data Governance</h4>
+            <p>Data governance frameworks satisfy both regulations</p>
+          </div>
+          <div class="synergy-card">
+            <div class="synergy-icon">🔒</div>
+            <h4>Privacy by Design</h4>
+            <p>Aligns with AI Act's transparency and robustness requirements</p>
+          </div>
+          <div class="synergy-card">
+            <div class="synergy-icon">📝</div>
+            <h4>Shared Documentation</h4>
+            <p>Documentation practices overlap significantly</p>
+          </div>
+          <div class="synergy-card">
+            <div class="synergy-icon">👥</div>
+            <h4>Human Oversight</h4>
+            <p>Oversight mechanisms serve dual purpose for both regulations</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="key-differences">
+        <h3>Key Differences</h3>
+        <table class="differences-table">
+          <tr>
+            <th>Aspect</th>
+            <th>GDPR</th>
+            <th>AI Act</th>
+          </tr>
+          <tr>
+            <td><strong>Primary Focus</strong></td>
+            <td>Privacy and personal data protection</td>
+            <td>Product safety and fundamental rights protection</td>
+          </tr>
+          <tr>
+            <td><strong>Regulatory Approach</strong></td>
+            <td>Applies to all personal data processing equally (with some risk scaling)</td>
+            <td>Risk-based categorization (4 levels) with differentiated requirements</td>
+          </tr>
+          <tr>
+            <td><strong>Key Actors</strong></td>
+            <td>Controllers and Processors</td>
+            <td>Providers and Deployers</td>
+          </tr>
+          <tr>
+            <td><strong>When It Applies</strong></td>
+            <td>Only when personal data is processed</td>
+            <td>Applies to AI systems regardless of data type</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="section">
+    <div class="container">
+      <h2 class="section-title">Implementation Timeline</h2>
+      <p class="section-subtitle">Key deadlines and milestones</p>
+      
+      <div class="countdown-box" id="countdown-box">
+        <!-- Populated by JavaScript -->
+      </div>
+
+      <div class="timeline" id="timeline">
+        <!-- Timeline items populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Official Resources &amp; Tools</h2>
+      <p class="section-subtitle">Essential links and guidance documents</p>
+      
+      <div class="resources-grid" id="resources-grid">
+        <!-- Resources populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Compliance Checker Section -->
+  <section id="compliance-checker" class="section">
+    <div class="container">
+      <h2 class="section-title">Interactive Compliance Checker</h2>
+      <p class="section-subtitle">Determine your AI system's risk classification</p>
+      
+      <div class="compliance-checker-container">
+        <div class="checker-card" id="checker-card">
+          <div id="question-container">
+            <!-- Questions populated by JavaScript -->
+          </div>
+          <div id="result-container" class="hidden">
+            <!-- Results populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      
+      <div class="faq-accordion" id="faq-accordion">
+        <!-- FAQ items populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 EU AI Act Compliance Guide. For educational purposes. Last updated: November 2, 2025</p>
+      <p><small>This guide is not legal advice. Consult with qualified legal professionals for compliance guidance.</small></p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
